@@ -1,0 +1,86 @@
+---
+title: Payment Methods
+description: Supported blockchains, wallets, and currencies for purchasing on ForLarge
+---
+
+# Payment Methods
+
+ForLarge accepts cryptocurrency payments on multiple blockchains. All prices are denominated in **USDC** (USD Coin), a stablecoin pegged 1:1 to the US dollar.
+
+## Supported Chains
+
+### Solana
+
+| | |
+|---|---|
+| **Currency** | USDC (SPL Token) |
+| **Wallets** | Phantom, Solflare |
+| **Gas Token** | SOL |
+| **Confirmation Time** | ~1 second |
+| **Gas Fees** | < $0.01 |
+
+Solana is the recommended chain for most transactions. It offers near-instant confirmations and extremely low gas fees.
+
+### Injective
+
+| | |
+|---|---|
+| **Currency** | USDC (Peggy) |
+| **Wallets** | Keplr, Leap |
+| **Gas Token** | INJ |
+| **Confirmation Time** | ~2 seconds |
+| **Gas Fees** | < $0.01 |
+
+Injective is a Cosmos-based chain popular in the DeFi ecosystem. USDC on Injective uses the Peggy bridge denomination.
+
+### Base (Coming Soon)
+
+| | |
+|---|---|
+| **Currency** | USDC (ERC-20) |
+| **Wallets** | MetaMask, Coinbase Wallet |
+| **Gas Token** | ETH |
+| **Status** | 🔜 Coming Soon |
+
+## What is USDC?
+
+USDC (USD Coin) is a **stablecoin** — a cryptocurrency pegged to the US dollar. 1 USDC always equals approximately $1 USD.
+
+Using USDC means:
+- **No price volatility** — you always know exactly what you're paying
+- **Cross-chain availability** — USDC exists on all major blockchains
+- **Easy to acquire** — available on every major exchange (Coinbase, Binance, etc.)
+
+## Getting USDC
+
+### On Solana
+1. **From an exchange**: Buy USDC on Coinbase, Binance, or Kraken and withdraw to your Solana wallet
+2. **Swap on-chain**: Use Jupiter or Raydium to swap SOL for USDC
+
+### On Injective
+1. **From an exchange**: Buy USDC and bridge to Injective
+2. **Use Injective Bridge**: Bridge USDC from Ethereum to Injective using the official bridge at [hub.injective.network](https://hub.injective.network)
+
+## Gas Fees
+
+In addition to the product price, you'll need a small amount of the chain's native token to pay transaction fees:
+
+- **Solana**: ~0.000005 SOL (less than $0.01)
+- **Injective**: ~0.001 INJ (less than $0.01)
+
+<Info>
+  Gas fees on both Solana and Injective are negligible — typically less than a penny per transaction.
+</Info>
+
+## Transaction Flow
+
+When you make a purchase:
+
+1. Your wallet creates a transaction sending USDC to:
+   - **95%** to the creator's wallet
+   - **5%** to the ForLarge platform wallet
+2. You sign and broadcast the transaction
+3. ForLarge's servers verify the transaction on-chain
+4. Once confirmed, you receive your download link
+
+The entire process typically takes under 10 seconds.
