@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "venus",
-  "name": "ForLarge",
+  "theme": "maple",
+  "name": "Forlarge",
   "colors": {
     "primary": "#88AAEE",
     "light": "#88AAEE",
